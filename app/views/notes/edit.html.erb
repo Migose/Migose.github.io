@@ -1,0 +1,11 @@
+<h1 class="header">글을 수정해 보아요</h1>
+<br>
+<br>
+<div class="header">
+    <form action="/notes_update">
+        <input name="note_id" type="hidden" value=<%= @note.id%>></input>
+        제목: <input name="input_title" type="text" value=<%= @note.title%>></input><br>
+        내용: <input name ="input_content" type="text" value=<%= @note.content%>></input><br>
+        <input type="submit"></input>
+    </form>
+</div>

@@ -1,0 +1,9 @@
+<h1 class="title">제목 : <%= @note.title%></h1>
+<p class="content">내용 : <%= @note.content%></p>
+<br>
+<br>
+<div class="icons">
+    <a href="/notes">목록</a>
+    <a href="/notes/<%= @note.id %>/destroy">삭제</a>
+    <a href="/notes/<%= @note.id %>/edit">수정</a>
+</div>

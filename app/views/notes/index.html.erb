@@ -1,0 +1,12 @@
+<div class="header_outer"><h1 class="header">모든 방명록의 목록입니다.</h1></div>
+<br>
+<br>
+<h2 class="new_note"><a href ="notes/new">새글 쓰러 가기</a></h2>
+<br>
+<div class="index">
+    <ul class="index_inside">
+        <% @notes.each do |note| %>
+            <li><a href="notes/<%=note.id %>"><%= note.title %></a></li>
+        <% end %>
+    </ul>
+</div>
